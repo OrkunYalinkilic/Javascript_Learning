@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<header></header>
+
+<header></header>
+
+<script>
+
+var headerimiz=document.getElementsByTagName("header");
+
+for(var i=0; i<4; i++){
+   
+    headerimiz[0].innerHTML+="<p></p>";
+    headerimiz[1].innerHTML+="<p></p>";
+
+}
+
+var headerinCocuklari1= headerimiz[0].childNodes;
+var headerinCocuklari2=headerimiz[1].childNodes;
+
+for(var i=0; i<headerinCocuklari1.length; i++){
+    headerinCocuklari1[i].innerHTML="p" + i;
+}
+
+for(var i=0; i<headerinCocuklari2.length; i++){
+
+    headerinCocuklari2[i].innerHTML=(i+1.)+".paragraf";
+}
+
+</script>
+
+
+</body>
+</html>

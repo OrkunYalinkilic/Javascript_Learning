@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        h6{
+            display: inline;
+        }
+    </style>
+
+</head>
+<body>
+    
+<h6 style="color:blue;"  onclick="tarihGosterAnlik()">Tarih:</h6>
+<h6> </h6> 
+<h6 style="color:red;"  onclick="tarihGosterSurekli()"><br>Tarih:</h6>
+<h6> </h6>
+
+<script>    
+    var ikinci = document.getElementsByTagName("h6")[1];
+    var dorduncu = document.getElementsByTagName("h6")[3];
+    
+    function tarihGosterSurekli(){ 
+        dorduncu.innerHTML= setInterval(tarihGosterAnlik2,100);
+    }
+
+    function tarihGosterAnlik(){
+        var anlikTarih = new Date();
+        ikinci.innerHTML=anlikTarih.getHours() + ":" + anlikTarih.getMinutes() + ":" + anlikTarih.getSeconds();
+    }
+
+    function tarihGosterAnlik2(){
+        var anlikTarih = new Date();
+        dorduncu.innerHTML=anlikTarih.getHours() + ":" + anlikTarih.getMinutes() + ":" + anlikTarih.getSeconds();
+    }
+</script>
+
+</body>
+</html>

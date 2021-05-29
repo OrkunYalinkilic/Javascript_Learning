@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+    div{
+        border:2px solid blue;
+    }
+
+</style>
+
+
+</head>
+<body>
+    
+    <div class="div">Lorem ipsum dolor sit amet.</div>
+
+    <script>
+    
+        var divimiz = document.getElementsByClassName("div")[0];
+
+        divimiz.onmouseover = function(){
+            divimiz.innerHTML = "on mouse over ile üzerine gelindi.";
+        }
+
+        divimiz.onmouseout = function(){
+            divimiz.innerHTML = "on mouse out ile üzerinden ayrıldı.";
+        }
+    
+        divimiz.onmousedown = function(){
+            divimiz.innerHTML="on mouse down ile tek tık yapıldı.";
+        }
+
+        divimiz.onmouseup = function(){
+            divimiz.innerHTML="on mouse up ile tık yapılıp çekildi.";
+        }
+
+
+
+
+    </script>
+
+
+</body>
+</html>

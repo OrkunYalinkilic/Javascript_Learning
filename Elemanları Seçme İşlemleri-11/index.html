@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="bolum">
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p><p>
+        Lorem ipsum dolor sit amet.
+    </p><p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+</div>
+
+    <script>    
+    
+    var paragraflar= document.getElementsByTagName("p");
+
+    paragraflar[2].nextSibling.innerHTML="<b style=\"color:red;\">Burasi değiştirildi..</b>";
+    paragraflar[2].previousSibling.innerHTML="<em style=\"color:blue;\">Burasi değiştirildi..</em>";
+    paragraflar[3].parentNode.innerHTML+="<b style=\"color:darkgreen;\"><em>Burasi sonradan eklendi..</em></p>";
+    
+    </script>
+
+</body>
+</html>

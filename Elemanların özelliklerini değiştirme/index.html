@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    img{
+        width:100%;
+    }
+
+    button{
+        display: block;
+        position:absolute;
+        left:200px;
+        top:260px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <img id="foto" src="img/coder1.jpg" title="coder1 fotosu" alt="">
+
+    <button onclick=resimDegistir()>RESİM DEĞİŞTİR</button>
+
+    <script>
+    
+    var image=document.getElementById("foto");
+
+    var imageDizisi = ["img/coder1.jpg", "img/coder2.jpg"];
+    var i=0;
+    
+    function resimDegistir(){
+        i++;
+        if(i%2==1){
+            image.src=imageDizisi[1];
+            image.title="coder2 fotosu";
+        }
+        else{
+            image.src=imageDizisi[0];
+            image.title="coder1 fotosu";
+        }
+        
+    }
+    
+    </script>
+</body>
+</html>

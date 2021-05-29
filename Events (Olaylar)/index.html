@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+    img{
+        height:300px;
+    }
+
+
+</style>
+    
+</head>
+<body>
+    
+
+<img src="img/coder.jpg" alt="">
+
+<div id="metin">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
+    Inventore fuga possimus ipsam exercitationem quis beatae autem<br> 
+
+</div>
+
+<script>
+
+    var resim  = document.getElementsByTagName("img")[0];
+    var yazi = document.getElementById("metin");
+
+
+    resim.onload = function() {
+        alert("Resim yüklendi..");
+    }
+
+    resim.onclick = function() {
+        resim.src="img/csharp.jpg";
+        resim.title="csharp isimli resim";
+    }
+
+  yazi.onclick = function() {
+      yazi.innerHTML = "Yeni rastgele metinn";
+  }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

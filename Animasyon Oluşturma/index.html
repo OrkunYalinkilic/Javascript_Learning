@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    #AnaKutu{
+
+        width:400px;
+        height:400px;
+        background:greenyellow;
+        position: relative;
+    }
+
+    #KucukKutu{
+        width:100px;
+        height:100px;
+        background:blue;
+        position: relative;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="AnaKutu">
+        <div id="KucukKutu">
+        </div>
+    </div>
+
+    <script>
+    
+    window.onload = function(){
+
+        var pozX=0; 
+        var pozY=0;
+        var kucuk_kutu = document.getElementById("KucukKutu");
+        var zaman = setInterval(hareketEt,1);
+
+        function hareketEt(){
+
+        if(pozX<=300 && pozY==0){
+            pozX+=1;
+            kucuk_kutu.style.left = pozX + "px";
+        }
+
+         if(pozX==300 && pozY<=300){
+            pozY+=1;
+            kucuk_kutu.style.top= pozY + "px";
+        }
+        
+        if(pozX<=300 && pozY==300) {
+            pozX-=1;
+            kucuk_kutu.style.left=pozX + "px";
+        }
+       
+        //şu an pozY=300
+
+        if(pozY<=300 && pozX==0){
+            pozY-=1;
+            kucuk_kutu.style.top=pozY + "px";
+        }
+        }
+    }
+ 
+    </script>
+
+</body>
+</html>

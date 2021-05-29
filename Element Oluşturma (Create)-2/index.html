@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    var aEtiketi = document.createElement("a");
+    document.body.appendChild(aEtiketi);
+
+    aEtiketi.href="https://www.google.com.tr";
+    aEtiketi.title="Arama motoru";
+    aEtiketi.target="_blank";
+
+   // aEtiketi.innerHTML="Google.com'a Git.";
+    
+    var aEtiketBilgisi = document.createTextNode("Google.com'a Git.");
+    aEtiketi.appendChild(aEtiketBilgisi);
+    
+    </script>
+
+</body>
+</html>

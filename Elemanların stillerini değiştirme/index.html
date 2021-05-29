@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    .paragraf{
+        width:50%;
+        height:250px;
+        color:blue;
+        background:yellow;
+        padding-top:20px;
+        text-align: justify;
+        font-weight: bold;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <p class="paragraf" onclick="degistir()">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, cupiditate.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, dolor?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, repellendus.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, eum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, saepe.
+    </p>
+    <script>
+        var yazi=document.getElementsByClassName("paragraf")[0];
+        function degistir(){
+            yazi.style.color = "black";
+            yazi.style.backgrond = "red";
+            yazi.style.fontStyle = "italic";
+            yazi.style.width = "75%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        var bodyBolumu = document.body;
+
+        for(var i=0; i<20; i++){
+            bodyBolumu.innerHTML+="<p>ilk</p>";
+        }
+
+        var BodydekiCocuklar = bodyBolumu.childNodes;
+
+        for(var i=1; i<BodydekiCocuklar.length; i++){
+
+            BodydekiCocuklar[i].innerHTML="paragraf"+(i-1);
+
+        }
+    
+    
+    </script>
+
+</body>
+</html>

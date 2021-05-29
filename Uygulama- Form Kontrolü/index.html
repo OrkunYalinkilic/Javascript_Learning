@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<form action="" onsubmit="return passwordValidate()" >
+
+
+    <input type="password" name="password" placeholder="Şifrenizi giriniz.."> <br>
+    <input type="password" name="repassword" placeholder="Şifrenizi tekrar giriniz.."> <br>
+    <input type="submit" value="Kayıt OL">
+
+</form>
+
+<script>
+
+    var pass = document.getElementsByName("password")[0];
+    var repass = document.getElementsByName("repassword")[0];
+
+    function passwordValidate(){
+
+        if( pass.value!="" && repass.value!="" ){
+
+            if(pass.value==repass.value){
+                alert("Şifreler aynı.\n KAYIT OLMA İŞLEMİ TAMAMLANDI.");
+                return true;
+            }
+        }
+
+        alert("Şifreler farklı!\n KAYIT OLMA İŞLEMİ TAMAMLANAMADI.");
+        return false;
+
+    }
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    function arac(marka,model,kilometre,alisyili)
+    {
+        this.marka=marka;
+        this.model=model;
+        this.kilometre=kilometre;
+        this.alisyili=alisyili;
+        this.yas=yas;
+    }
+
+    function yas(){
+        return (2019)- this.alisyili;
+    }
+
+    alert("Hosgeldiniz..");
+
+    var mrk=prompt("Arac markasini giriniz:");
+    var mdl=prompt("Arac modelini giriniz:");
+    var kmt=prompt("Arac kilometresini giriniz:");
+    var als=prompt("Arac alis yilini giriniz:");
+
+    var arac1=new arac(mrk,mdl,kmt,als);
+
+    document.write("ARAC MARKASI: " + arac1.marka + "<br>");
+    document.write("ARAC MODEL: " + arac1.model + "<br>");
+    document.write("ARAC KILOMETRESİ: " + arac1.kilometre + "<br>");
+    document.write("ARACIN ALIS YILI: " + arac1.alisyili + "<br>");
+    document.write("ARACIN YASI:" + arac1.yas());
+
+    </script>
+
+
+</body>
+</html>

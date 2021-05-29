@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var paragraf1 = document.createElement("p");
+        document.body.appendChild(paragraf1);
+        paragraf1.innerHTML="Ben create Element ile oluşturulan append child ile body'e eklenen paragrafım..";
+
+        var paragraf2 = document.createTextNode("Ben create Text Node ile oluşturulan append child ile body'e eklenen paragrafım.");
+        document.body.appendChild(paragraf2);
+
+        /*var paragraf2 = document.createTextNode("Ben create Text Node ile oluşturulan append child ile ilk paragrafa eklenen paragrafım.");
+        paragraf1.appendChild(paragraf2);*/
+
+    </script>
+
+</body>
+</html>

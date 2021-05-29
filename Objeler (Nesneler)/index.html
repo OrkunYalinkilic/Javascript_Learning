@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        function insan (insan_ismi,insan_yasi,insan_boyu,insan_kilosu){
+
+            this.isim=insan_ismi;
+            this.yas=insan_yasi;
+            this.boy=insan_boyu;
+            this.kilo=insan_kilosu;
+            
+            this.isimDegistir=function(yeni_isim){
+                this.isim=yeni_isim;
+            }
+
+            this.dogumYili=function(){
+                return (2019-this.yas);
+            }
+
+        }
+
+        var insan1= new insan( "Orkun", 21, 1.80, 75);
+        var insan2= new insan("Berat", 5, 1.20, 30);
+
+        document.write(insan1.isim + " " + insan1.yas + "-" + insan1.boy + "-" + insan1.kilo + " " + insan1.dogumYili() + "<br>");
+        insan1.isimDegistir("Fatih");
+        document.write(insan1.isim + " " + insan1.yas + "-" + insan1.boy + "-" + insan1.kilo + " " + insan1.dogumYili() + "<br>");
+        document.write(insan2.isim + " " + insan2.yas + "-" + insan2.boy + "-" + insan2.kilo + " " + insan2.dogumYili() );
+        
+    </script>
+
+
+</body>
+</html>     

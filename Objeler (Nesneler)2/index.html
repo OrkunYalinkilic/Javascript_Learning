@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head> 
+<body>
+
+    <script>
+    
+    function takim(isim,galibiyet,mağlubiyet,beraberlik,kurulus,oyuncu_sayisi){
+        this.isim=isim;
+        this.galibiyet=galibiyet;
+        this.beraberlik=beraberlik;
+        this.mağlubiyet=mağlubiyet;
+        this.kurulus=kurulus;
+        this.oyuncu_sayisi=oyuncu_sayisi;
+        this.yedek_oyuncu_sayisi_hesapla=yedek_oyuncu_sayisi_hesapla;
+        this.kulup_yas_hesapla=kulup_yas_hesapla;
+        this.puan_hesapla=puan_hesapla;
+    }
+    
+    function yedek_oyuncu_sayisi_hesapla(){
+        return this.oyuncu_sayisi-11;
+    }
+
+    function kulup_yas_hesapla(){
+        return (2019-this.kurulus);
+    }
+    
+    function puan_hesapla(){
+        return (this.galibiyet*3 + this.beraberlik*1);
+    }
+
+    alert("Hosgeldiniz..");
+
+    var ad=prompt("Takim ismini giriniz..");
+    var g=prompt("Takim galibiyet sayisini giriniz:");
+    var b=prompt("Takim beraberlik sayisini giriniz:");
+    var m=prompt("Takim mağlubiyet sayisini giriniz:");
+    var k=prompt("Takim kurulus yilini giriniz:");
+    var o=prompt("Takim oyuncu sayisini giriniz:");
+    
+
+    var takim1=new takim(ad,g,m,b,k,o);
+
+    document.write(" Takım ismi: "+ takim1.isim + "<br>" );
+    document.write(" Takımın galibiyet sayisi: "+ takim1.galibiyet + "<br>" );
+    document.write(" Takımın beraberlik sayisi: "+ takim1.beraberlik + "<br>" );
+    document.write(" Takımın mağlubiyet sayisi: "+ takim1.mağlubiyet + "<br>" );
+    document.write(" Takımın kuruluş yılı: "+ takim1.kurulus + "<br>" );
+    document.write(" Takımın oyuncu sayisi: "+ takim1.oyuncu_sayisi + "<br>" );
+    document.write("Takimdaki yedek oyuncu sayisi:" + takim1.yedek_oyuncu_sayisi_hesapla() + "<br>");
+    document.write("Takimin yasi: "+ takim1.kulup_yas_hesapla() + "<br>");
+    document.write("Takim puani: " + takim1.puan_hesapla());
+
+    </script>
+ 
+</body>
+</html>

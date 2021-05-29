@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="bolumler">
+        <p id="vizyon">Vizyonumuz</p>
+        <button onclick="vizyonDegistir()">DEĞİŞTİR</button>
+        <p id="misyon">Misyonumuz</p>
+        <button onclick="misyonDegistir()">DEĞİŞTİR</button>
+    </div>
+
+    <script>
+    
+        var bolumlerKismi = document.getElementById("bolumler");
+        var vizyon = document.getElementById("vizyon");
+        var misyon = document.getElementById("misyon");
+
+        var yeniparagraf1 = document.createTextNode("Projelerimiz");
+        var yeniparagraf2 = document.createTextNode("Hedeflerimiz");
+
+        function vizyonDegistir(){
+            vizyon.parentElement.replaceChild(yeniparagraf1,vizyon);
+            misyon.style.color="red";
+        }
+
+        function misyonDegistir(){
+            misyon.parentElement.replaceChild(yeniparagraf2,misyon);
+        }
+    
+    
+    </script>
+
+
+</body>
+</html>

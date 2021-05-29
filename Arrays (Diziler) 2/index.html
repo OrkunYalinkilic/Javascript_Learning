@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    var dizi1 = new Array("sari","lacivert","kirmizi");
+
+    for(var i=0; i<dizi1.length; i++){
+        document.write(dizi1[i] + " ");
+    }
+
+    document.write("<hr>");
+
+    var dizi2 = new Array(3);
+    
+    dizi2[0] ="sari";
+    dizi2[1]= "lacivert";
+    dizi2[2] = "yeşil";
+
+    for(var i=0; i<dizi2.length; i++){
+        document.write(dizi2[i] + " ");
+    }
+
+    document.write("<hr>");
+
+    var dizi3 = new Array("sari","lacivert","kirmizi");
+     document.write(dizi3);
+
+    document.write("<hr>");
+
+    var dizi4 = new Array();
+    
+    dizi4[0] = "sari";
+    dizi4[1] = "lacivert";
+    dizi4[2] = "yeşil";
+    dizi4[3] = "beyaz";
+
+    for(var i=0; i<dizi4.length; i++){
+        document.write(dizi4[i] + " ");
+    }
+
+    document.write("<hr>");
+
+    var takimlar1=["FB","GS"];
+    var takimlar2=["TS","BJK"];
+
+    var takimlar=takimlar1.concat(takimlar2);
+
+    for(var i=0; i<takimlar.length; i++){
+        document.write(takimlar[i] + " ");
+    }
+
+    document.write("<hr>");
+
+    document.write(takimlar.length);
+
+
+  
+    
+
+    
+    </script>
+</body>
+</html>

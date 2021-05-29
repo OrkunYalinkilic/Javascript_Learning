@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    ONCHANGE---><input type="text" class="input" value="Metin giriniz.."> <br><br>
+    ONKEYUP---><input type="text" class="input" value="Metin giriniz.."> <br><br>
+    ONKEYDOWN---><input type="text" class="input" value="Metin giriniz.."> <br><br>
+
+    <script>
+        var input1 = document.getElementsByClassName("input")[0];
+        var input2 = document.getElementsByClassName("input")[1];
+        var input3 = document.getElementsByClassName("input")[2];
+
+
+        input1.onchange = function () {
+            input1.value = input1.value.toUpperCase();
+        }
+
+        input2.onkeyup = function () {
+            input2.value = input2.value.toUpperCase();
+        }
+
+        input3.onkeydown = function () {
+            input3.value = input3.value.toUpperCase();
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
